@@ -1,6 +1,6 @@
 from pathlib import Path
 import random
-
+import pytz
 from aiogram.dispatcher import FSMContext
 
 from keyboards.default.editPart import editPicture
@@ -78,6 +78,8 @@ async def comebackq(message: Message, state: FSMContext):
 async def show_static(message: Message):
     link = 'https://t.me/rasm_ishla_bot'
     today = dt.datetime.now()
+    timezone = pytz.timezone("Asia/Tashkent")
+    today = timezone.localize(today)
     count = db.count_users()[0]
     await message.reply(f"""📊┌ STATISTIKA
 👥├  A`zolar: {count}
