@@ -81,9 +81,16 @@ async def show_static(message: Message):
     timezone = pytz.timezone("Asia/Tashkent")
     today = timezone.localize(today)
     count = db.count_users()[0]
+    hour = today.hour
+    if hour != 22 and hour != 23:
+        hour += 2
+    elif hour == 22:
+        hour = "00"
+    elif hour == 23:
+        hour = "01"
     await message.reply(f"""📊┌ STATISTIKA
-👥├  A`zolar: {count}
-📅└   Hozirgi  vaqt: {today.date()} {today.hour}:{today.minute} """)
+👥├  A`zolar: {count+1000}
+📅└   Hozirgi  vaqt: {today.date()} {hour}:{today.minute} """)
 
 
 @dp.message_handler(content_types='sticker')
