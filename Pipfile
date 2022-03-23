@@ -8,6 +8,7 @@ aiogram = "~=2.14"
 environs = "~=8.0.0"
 django = "*"
 opencv-python = "*"
+pysqlite3 = "*"
 
 [dev-packages]
 
