@@ -28,7 +28,9 @@ async def show_main_menu(message: Message):
 
 @dp.message_handler(text='🧑‍💻Dasturchi')
 async def show_menu(message: Message):
-    await message.answer(f"Savol va takliflaringiz bolsa @BadBoy_devbot ga"
+    await message.answer(f"Assalomu aleykum ! \n"
+                         f"Dasturchi - <a href='https://t.me/+vQ8rIJXTSb9kZjY5'>Abdurahim Mahmudov</a>\n"
+                         f"Savol va takliflaringiz bolsa @BadBoy_devbot ga"
                          f" murojaat qilishingiz mumkin")
 
 
