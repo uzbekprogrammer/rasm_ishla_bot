@@ -51,7 +51,7 @@ async def back(message: Message):
     await message.answer("Iltimos rasmni siqilmagan holatda yuboring", reply_markup=comeback)
 
 
-@dp.message_handler(text="Multik rasm 1")
+@dp.message_handler(text="Multik rasm 2")
 async def cartoon1(message: Message):
     await CartoonState1.cartoon_pic1.set()
     await message.answer("Iltimos rasmni siqilmagan holatda yuboring", reply_markup=comeback)
@@ -65,7 +65,7 @@ async def cartoon2(message: Message):
 
 @dp.message_handler(text="Qalamda rasm")
 async def pencil(message: Message):
-    # await Pencil.pencil.set()
+    await Pencil.pencil.set()
     await message.answer("Iltimos rasmni siqilmagan holatda yuboring", reply_markup=comeback)
 
 

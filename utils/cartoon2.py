@@ -67,13 +67,14 @@ class Cartoonizer:
         return cv2.bitwise_and(img_color, img_edge)
 
 
-tmp_canvas = Cartoonizer()
+async def multic(file_name):
+    tmp_canvas = Cartoonizer()
 
-file_name = "download.jpg"  # File_name will come here
-res = tmp_canvas.render(file_name)
+    res = tmp_canvas.render(file_name)
 
-cv2.imwrite("1.jpg", res)
-# cv2.imshow("Cartoon version", res)
-cv2.waitKey(0)
-# cv2.destroyAllWindows()
+    cv2.imwrite(file_name, res)
+    # cv2.imshow("Cartoon version", res)
+    cv2.waitKey(0)
 
+
+# multic("images (1).jpg")

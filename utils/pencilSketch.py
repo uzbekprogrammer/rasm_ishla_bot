@@ -10,7 +10,7 @@ async def pencil_sketch(photo_name):
     pencil_sketch1 = cv2.divide(gray_image, inverted_blurred, scale=256.0)
 
     cv2.waitKey(0)
-    cv2.imwrite(f'{photo_name}.jpg', pencil_sketch1)
+    cv2.imwrite(f'{photo_name}', pencil_sketch1)
 
 
 # if __name__ == "__main__":

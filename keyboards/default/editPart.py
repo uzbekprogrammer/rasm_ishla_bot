@@ -10,11 +10,11 @@ editPicture = ReplyKeyboardMarkup(
             KeyboardButton(text="Orqa fonni olish")
         ],
         [
-          # KeyboardButton(text="Multik rasm 1"),
-          KeyboardButton(text="Multik rasm")
+          KeyboardButton(text="Multik rasm"),
+          KeyboardButton(text="Multik rasm 2")
         ],
         [
-            # KeyboardButton(text="Qalamda rasm"),
+            KeyboardButton(text="Qalamda rasm"),
 
         ],
         [
