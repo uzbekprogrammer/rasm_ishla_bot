@@ -9,7 +9,7 @@ from loader import dp, bot
 from states import CartoonState2, CartoonState1
 from utils import show_size
 from utils.Cartoon1 import cartoon
-from utils.cartoon2 import multic
+# from utils.cartoon2 import multic
 from utils.photograph import photo_link
 
 

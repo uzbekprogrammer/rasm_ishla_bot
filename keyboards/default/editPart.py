@@ -11,10 +11,10 @@ editPicture = ReplyKeyboardMarkup(
         ],
         [
           KeyboardButton(text="Multik rasm"),
-          KeyboardButton(text="Multik rasm 2")
+          # KeyboardButton(text="Multik rasm 2")
         ],
         [
-            KeyboardButton(text="Qalamda rasm"),
+            # KeyboardButton(text="Qalamda rasm"),
 
         ],
         [
