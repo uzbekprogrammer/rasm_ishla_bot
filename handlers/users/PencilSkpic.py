@@ -17,4 +17,4 @@ async def photo_handler(msg: types.Message):
     photo_file = InputFile(path_or_bytesio=name_photo)
     await msg.reply_photo(photo_file, caption=f"@rasm_ishla_bot 💾 {await show_size(name_photo)}")
     await answer.delete()
-    # os.remove(f'{msg.from_user.id}.jpg')
+    os.remove(f'{msg.from_user.id}.jpg')
